@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace WebApplication1.Controllers
 {
@@ -15,24 +17,22 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-
         private readonly IConfiguration _configuration;
         public DepartmentController(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-
         [HttpGet]
         public JsonResult Get()
         {
-            string query = @"
+            var query = @"
                             select DepartmentId, DepartmentName from
                             dbo.Department
                             ";
 
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
+            var sqlDataSource = _configuration.GetConnectionString("DefaultConnection");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -46,7 +46,19 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return new JsonResult(table);
+            // Convert DataTable to a List of Dictionaries
+            var result = new List<Dictionary<string, object>>();
+            foreach (DataRow row in table.Rows)
+            {
+                var dict = new Dictionary<string, object>();
+                foreach (DataColumn col in table.Columns)
+                {
+                    dict[col.ColumnName] = row[col];
+                }
+                result.Add(dict);
+            }
+
+            return new JsonResult(result);
         }
 
         [HttpPost]
@@ -58,7 +70,7 @@ namespace WebApplication1.Controllers
                             ";
 
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
+            var sqlDataSource = _configuration.GetConnectionString("DefaultConnection");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -76,7 +88,6 @@ namespace WebApplication1.Controllers
             return new JsonResult("Added Successfully");
         }
 
-
         [HttpPut]
         public JsonResult Put(Department dep)
         {
@@ -87,7 +98,7 @@ namespace WebApplication1.Controllers
                             ";
 
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
+            var sqlDataSource = _configuration.GetConnectionString("DefaultConnection");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -115,7 +126,7 @@ namespace WebApplication1.Controllers
                             ";
 
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
+            var sqlDataSource = _configuration.GetConnectionString("DefaultConnection");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -133,7 +144,5 @@ namespace WebApplication1.Controllers
 
             return new JsonResult("Deleted Successfully");
         }
-
-
     }
 }
