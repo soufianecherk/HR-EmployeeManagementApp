@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|c:\\users\\soufiane\\documents\\github\\hr-employeemanagementapp\\webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|c:\\users\\soufiane\\documents\\github\\hr-employeemanagementapp\\webapplication1\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|solutionrelative:mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|c:\\users\\soufiane\\documents\\github\\hr-employeemanagementapp\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|c:\\users\\soufiane\\documents\\github\\hr-employeemanagementapp\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|c:\\users\\soufiane\\documents\\github\\hr-employeemanagementapp\\webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74B33A3C-592A-4D70-82BC-E3F2789233D0}|WebApplication1.csproj|c:\\users\\soufiane\\documents\\github\\hr-employeemanagementapp\\webapplication1\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\MyDbContext.cs",
+              "RelativeToolTip": "MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T22:31:24.022Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -40,9 +57,9 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-21T15:43:55.362Z",
+              "WhenOpened": "2025-01-22T22:31:56.442Z",
               "EditorCaption": ""
             },
             {
@@ -53,27 +70,27 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvysAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T16:41:50.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
               "ToolTip": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwCIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T15:47:49.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
@@ -86,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\Soufiane\\Documents\\GitHub\\HR-EmployeeManagementApp\\WebApplication1\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
